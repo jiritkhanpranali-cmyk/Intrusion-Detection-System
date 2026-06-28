@@ -1,0 +1,16 @@
+# datasets
+*.csv
+*.txt
+*.parquet
+
+# models
+*.pkl
+
+# python
+__pycache__/
+*.pyc
+
+# streamlit
+.streamlit/secrets.toml
+# database
+*.db
