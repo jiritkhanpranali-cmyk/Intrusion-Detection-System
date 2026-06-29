@@ -1,0 +1,78 @@
+PROJECT STRUCTURE
+
+
+Intrusion-Detection-System
+
+|
+
+|-- app.py
+
+    Main Streamlit application
+
+    Handles dataset upload,
+    prediction and dashboard
+
+
+|-- train_model.py
+
+    Trains NSL-KDD Machine Learning model
+
+
+|-- train_cicids.py
+
+    Trains CICIDS2017 Machine Learning model
+
+
+|-- convert_cicids.py
+
+    Converts CICIDS parquet files
+    into CSV format
+
+
+|-- database.py
+
+    Handles SQLite database connection
+    and stores detection history
+
+
+|-- intrusion_model.pkl
+
+    Trained NSL-KDD model
+
+
+|-- models/
+
+       |
+
+       |-- cicids_model.pkl
+
+            Trained CICIDS2017 model
+
+
+|-- .streamlit/
+
+       |
+
+       |-- config.toml
+
+            Streamlit configuration
+
+
+|-- requirements.txt
+
+    Required Python libraries
+
+
+|-- README.md
+
+    Project documentation
+
+
+|-- Nodes.txt
+
+    Execution flow
+
+
+|-- Structure.txt
+
+    Project architecture explanation
