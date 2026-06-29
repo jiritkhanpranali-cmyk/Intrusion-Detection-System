@@ -1,0 +1,102 @@
+AI MULTI-DATASET INTRUSION DETECTION SYSTEM EXECUTION FLOW
+
+
+START
+
+ |
+
+ |
+
+User Opens Streamlit Application
+
+ |
+
+ |
+
+Dataset Upload
+
+(NSL-KDD / CICIDS2017)
+
+ |
+
+ |
+
+Dataset Type Detection
+
+ |
+
+ +-----------------------+
+
+ |                       |
+
+ v                       v
+
+NSL-KDD TXT          CICIDS CSV
+
+ |                       |
+
+ |                       |
+
+Load NSL Model       Load CICIDS Model
+
+ |                       |
+
+ +-----------------------+
+
+             |
+
+             |
+
+     Data Preprocessing
+
+             |
+
+             |
+
+ Feature Transformation
+
+             |
+
+             |
+
+ Random Forest Prediction
+
+             |
+
+             |
+
+ Classification
+
+             |
+
+ +-----------+-----------+
+
+ |                       |
+
+ v                       v
+
+Normal Traffic       Attack Traffic
+
+             |
+
+             |
+
+ Visualization Dashboard
+
+             |
+
+             |
+
+Save Result in SQLite Database
+
+             |
+
+             |
+
+Detection History Display
+
+             |
+
+             |
+
+END
